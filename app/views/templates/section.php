@@ -52,8 +52,8 @@
                     </div>
                     <div class="panel panel-collapse">
                         <ul class="nav nav-pills nav-stacked">
-                            <li role="presentation" ><a href="<?php echo BASE_URL; ?>/app/controller/userlist.php" >MUDAR SENHA</a></li>
-                            <li role="presentation" ><a href="<?php echo BASE_URL; ?>/app/controller/userperfil.php" >EDITAR PERFIL</a></li>
+                            <li role="presentation" ><a href="<?php echo BASE_URL; ?>/app/controller/userpasswd.php?id=<?php echo $_SESSION['udi']; ?>" >MUDAR SENHA</a></li>
+                            <li role="presentation" ><a href="<?php echo BASE_URL; ?>/app/controller/userview.php?id=<?php echo $_SESSION['udi']; ?>" >EDITAR PERFIL</a></li>
                         </ul>
                     </div>
                 </div>

@@ -31,7 +31,7 @@
 
 <!-- MENU DE CONTROLE ESPECIFICO POR USUARIO - BARRA LATERAL -->
 
-<?php require VIEW_ROOT . '/templates/sectionuser.php'; ?>
+<?php //require VIEW_ROOT . '/templates/sectionuser.php'; ?>
 
 <!-- MENU DE CONTROLE ESPECIFICO POR USUARIO - BARRA LATERAL -->
 

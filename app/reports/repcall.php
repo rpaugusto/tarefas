@@ -2,7 +2,7 @@
 
 require_once('fpdf/fpdf.php');
 require_once '../../app/start.php';
-require_once('report.php');
+//require_once('report.php');
 
 header('charset=ISO-8859-1');
 
@@ -10,7 +10,7 @@ $pdf = new FPDF("P", "pt", "A4");
 
 $pdf->AddPage();
 $pdf->Image('../../img/logoD.png');
-
+/*
 $pdf->SetFont('arial', 'B', 18);
 $pdf->Cell(0, 10, "RELATORIO DE ATENDIMENTO", 0, 1, 'C');
 $pdf->Cell(0, 5, "", "B", 1, 'C');
@@ -77,13 +77,13 @@ if (isset($_GET)) {
     $pdf->setFont('arial', '', 12);
     $pdf->MultiCell(0, 20, utf8_decode($solution), 0, 'J');
     
-} else {
+//} else {
 
     $pdf->ln(10);
 //Observações
     $pdf->SetFont('arial', 'B', 12);
     $pdf->Cell(70, 20, "ERRO AO CARREGAR RELATORIO", 0, 1, 'L');
-}
+//}*/
 
 //RODAPÉ
 $pdf->SetFont('arial', 'B', 12);
@@ -93,4 +93,4 @@ $pdf->SetFont('arial', 'B', 8);
 $pdf->Cell(0, 0, "ASSINATURA / CARIMBO", 0, 1, 'C');
 
 
-$pdf->Output("arquivo.pdf","D");
+$pdf->Output();
