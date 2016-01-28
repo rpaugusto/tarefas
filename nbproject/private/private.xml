@@ -3,9 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/wamp/www/tarefas/app/reports/repusers.php</file>
-            <file>file:/D:/wamp/www/tarefas/app/reports/repcall.php</file>
-            <file>file:/D:/wamp/www/tarefas/app/reports/report.php</file>
+            <file>file:/D:/wamp/www/tarefas/app/controller/actlist.php</file>
+            <file>file:/D:/wamp/www/tarefas/app/views/depart/list.php</file>
+            <file>file:/D:/wamp/www/tarefas/app/views/calls/list.php</file>
+            <file>file:/D:/wamp/www/tarefas/app/controller/actadd.php</file>
+            <file>file:/D:/wamp/www/tarefas/app/views/activity/add.php</file>
+            <file>file:/D:/wamp/www/tarefas/app/views/activity/list.php</file>
         </group>
     </open-files>
 </project-private>
