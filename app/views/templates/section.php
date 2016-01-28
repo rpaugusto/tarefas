@@ -31,33 +31,31 @@
                     </ul>
                 </div>
             </div>
-            <?php if ($_SESSION['level'] > 5): ?>
-                <div class="panel panel-primary">
-                    <div class="panel panel-heading">
-                        <strong> USUARIOS: </strong>
-                        <span class="badge pull-right"><?php echo ($users->rowCount()); ?></span>
-                    </div>
-                    <div class="panel panel-collapse">
-                        <ul class="nav nav-pills nav-stacked">
-                            <li role="presentation" ><a href="<?php echo BASE_URL; ?>/app/controller/useradd.php" >NOVO</a></li>
-                            <li role="presentation" ><a href="<?php echo BASE_URL; ?>/app/controller/userlist.php" >LISTAR</a></li>
-                            <li role="presentation" ><a href="<?php echo BASE_URL; ?>/app/controller/userview.php?id=<?php echo $_SESSION['udi']; ?>" >PERFIL</a></li>
-                        </ul>
-                    </div>
+            <div class="panel panel-primary">
+                <div class="panel panel-heading">
+                    <strong> ATIVIDADES: </strong>
+                    <span class="badge pull-right"><?php echo ($ctacts->rowCount()); ?></span>
                 </div>
-            <?php else: ?>
-                <div class="panel panel-primary">
-                    <div class="panel panel-heading">
-                        <strong> USUARIO: </strong>
-                    </div>
-                    <div class="panel panel-collapse">
-                        <ul class="nav nav-pills nav-stacked">
-                            <li role="presentation" ><a href="<?php echo BASE_URL; ?>/app/controller/userpasswd.php?id=<?php echo $_SESSION['udi']; ?>" >MUDAR SENHA</a></li>
-                            <li role="presentation" ><a href="<?php echo BASE_URL; ?>/app/controller/userview.php?id=<?php echo $_SESSION['udi']; ?>" >EDITAR PERFIL</a></li>
-                        </ul>
-                    </div>
+                <div class="panel panel-collapse">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li role="presentation" ><a href="<?php echo BASE_URL; ?>/app/controller/actadd.php" >NOVO</a></li>
+                        <li role="presentation" ><a href="<?php echo BASE_URL; ?>/app/controller/actlist.php" >LISTAR</a></li>
+
+                    </ul>
                 </div>
-            <?php endif; ?>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel panel-heading">
+                    <strong> TAREFAS: </strong>
+                    <span class="badge pull-right"><?php echo ($tasks->rowCount()); ?></span>
+                </div>
+                <div class="panel panel-collapse">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li role="presentation" ><a href="<?php echo BASE_URL; ?>/app/controller/taskadd.php" >NOVO</a></li>
+                        <li role="presentation" ><a href="<?php echo BASE_URL; ?>/app/controller/tasklist.php" >LISTAR</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </div>

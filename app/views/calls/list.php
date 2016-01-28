@@ -1,6 +1,40 @@
 <?php require VIEW_ROOT . '/templates/navadmin.php'; ?>
 <div class="col-md-12">
-    <a href="<?php echo BASE_URL; ?>/app/controller/calladd.php" class="btn btn-primary">Novo <span class="glyphicon glyphicon-ok-sign"></span></a>
+    <div class="row">
+        <ul class="nav nav-tabs">
+            <?php $tot = 0; ?>
+            <?php foreach ($count as $num): ?>
+                <li role="presentation">
+                    <a href="<?php echo BASE_URL; ?>/app/controller/calllist.php?st=<?php echo $num['status']; ?>">
+                        <?php
+                        if ($num['status'] == 'O') {
+                            echo 'ABERTO';
+                        } elseif ($num['status'] == 'C') {
+                            echo 'FECHADO';
+                        } else {
+                            echo 'EM ANDAMENTO';
+                        }
+                        ?>
+                        <span class="badge"><?php echo $num['num']; ?></span>
+                    </a>
+                </li>
+                <?php $tot = $tot + $num['num']; ?>
+            <?php endforeach; ?>
+            <li role="presentation">
+                <a href="<?php echo BASE_URL; ?>/app/controller/calllist.php">
+                    TODOS
+                    <span class="badge"><?php echo $tot; ?></span>
+                </a>
+            </li>
+            <li role="presentation" class=" pull-right">
+                <a href="<?php echo BASE_URL; ?>/app/controller/calladd.php" class="btn btn-primary">
+                    Novo
+                    <span class="glyphicon glyphicon-ok-sign"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
 </div>
 <div class="col-md-12">
 

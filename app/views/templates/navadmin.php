@@ -33,13 +33,14 @@
                     </a>
                 </li>
                  <li>
-                    <a href="#">
-                        <span class="glyphicon" aria-hidden="true"></span>
+                    <a href="<?php echo BASE_URL; ?>/app/controller/userview.php?id=<?php echo $_SESSION['udi']; ?>" >
+                        PERFIL
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
                     </a>
                 </li>
                 <li>
                     <a href="<?php echo BASE_URL; ?>/app/controller/logout.php">
-                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
                         SAIR
                     </a>
                 </li>
