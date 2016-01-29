@@ -51,7 +51,7 @@
                     <th>Departamento</th>
                     <th>Descrição</th>
                     <th>Status</th>
-                    <th>Modificações</th>
+                    <th>Atualizado</th>
                     <th></th>
                 </tr>
             </thead>
@@ -84,13 +84,13 @@
                         <td>
                             <a href="<?php echo BASE_URL; ?>/app/controller/callview.php?id=<?php echo $call['id']; ?>">
                                 <span class="glyphicon glyphicon-list-alt"></span>
-                            </a>|
+                            </a><!--|
                             <a href="<?php echo BASE_URL; ?>/app/controller/actionadd.php?id=<?php echo $call['id']; ?>">
                                 <span class="glyphicon glyphicon-info-sign"></span>
                             </a>|
                             <a href="<?php echo BASE_URL; ?>/app/controller/callclose.php?id=<?php echo $call['id']; ?>">
                                 <span class="glyphicon glyphicon-ok-sign"></span>
-                            </a>
+                            </a>-->
                         </td>
                     </tr>
                 <?php endforeach; ?>

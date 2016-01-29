@@ -10,7 +10,7 @@
         <!-- FAVICON -->
         <link rel="icon" href="<?php echo BASE_URL; ?>/img/favicon.ico" type="image/x-icon"/>
 
-        <title>Rui Augusto Penteado</title>
+        <title>Gestão de T.I. v.1.0.1</title>
         <!-- CSS -->
         <link href="<?php echo BASE_URL; ?>/css/app.css" rel="stylesheet">
         <link href="<?php echo BASE_URL; ?>/css/bootstrap.min.css" rel="stylesheet">
